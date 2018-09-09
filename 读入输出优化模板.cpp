@@ -1,5 +1,12 @@
 #include <iostream>
 using namespace std; 
+int read()
+{
+    int a=0,f=0;char c=getchar();
+    for(;c<'0'||c>'9';c=getchar())if(c=='-')f=1;
+    for(;c>='0'&&c<='9';c=getchar())a=a*10+c-'0';
+    return f?-a:a;
+}
 void read(int &x)
 {
     int f=1;x=0;char s=getchar();
