@@ -11,7 +11,7 @@ int  main()
     cin>>n;
     queue<ll> q;
     q.push(n);
-    map<ll,ll> m;
+    map<ll,ll> m; 
     m[n]=0;
     while(!q.empty())
     {
